@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "534448424629",
+    "project_id": "fworld2-b7cb5",
+    "storage_bucket": "fworld2-b7cb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534448424629:android:bf5797e78f39defd3d60fc",
+        "android_client_info": {
+          "package_name": "com.example.social_network"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534448424629-34g20u29rp0v2u2eg16j7sm97557o98i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC75XXzf5cpjFaYTYi734lJg_q6LdzOsqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534448424629-34g20u29rp0v2u2eg16j7sm97557o98i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
