@@ -97,25 +97,28 @@ class _CreatePostInputState extends State<CreatePostInput> {
                     children: [
                       TextButton(
                           onPressed: () {
-                            context.dispatch(FeedPSActions.addPost(
-                                post: Post(
-                                    title: title,
-                                    text: text,
-                                    user: FirebaseFirestore.instance
-                                        .collection("users")
-                                        .doc(state.user!.user!.uid)
-                                        .withConverter<User>(
-                                            fromFirestore: (DocumentSnapshot<
-                                                            Map<String,
-                                                                dynamic>>
-                                                        snapshot,
-                                                    SnapshotOptions? options) =>
-                                                state.user!.user!,
-                                            toFirestore: (
-                                              User value,
-                                              SetOptions? options,
-                                            ) =>
-                                                {})))); // TODO check toJson
+                            addUser();
+                            // print("creating post");
+                            // print("post2${state.user!.user!.uid}");
+                            // context.dispatch(FeedPSActions.addPost(
+                            //     post: Post(
+                            //         title: title,
+                            //         text: text,
+                            //         user: FirebaseFirestore.instance
+                            //             .collection("users")
+                            //             .doc(state.user!.user!.uid)
+                            //             .withConverter<User>(
+                            //                 fromFirestore: (DocumentSnapshot<
+                            //                                 Map<String,
+                            //                                     dynamic>>
+                            //                             snapshot,
+                            //                         SnapshotOptions? options) =>
+                            //                     state.user!.user!,
+                            //                 toFirestore: (
+                            //                   User value,
+                            //                   SetOptions? options,
+                            //                 ) =>
+                            //                     {})))); // TODO check toJson
                           },
                           child: Text("Send"))
                     ],
@@ -126,4 +129,6 @@ class _CreatePostInputState extends State<CreatePostInput> {
       );
     });
   }
+
+  void addUser() async {}
 }
